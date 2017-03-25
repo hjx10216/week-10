@@ -7,60 +7,142 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/leaflet.css" />
     <!-- Choose a frontend framework CSS file: -->
-    <!-- <link rel="stylesheet" href="css/bootstrap.css" /> -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
     <!-- <link rel="stylesheet" href="css/material.css" /> -->
     <!-- <link rel="stylesheet" href="css/assembly.css" /> -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- Sidebar -->
-    <div class="sidebar">
-      <nav class="navbar navbar-default">
-        <div class="container-fluid clearfix">
-          <div class="topright-button" style="float: right">
-            [Add New]
+    <div class="container-fluid">
+      <div class="row">
+        <!-- sidebar1 -->
+        <div class="col-md-2" id="sidebar1">
+          <!-- Button groups -->
+          <div class="btn-group" role="group" aria-label="...">
+            <button type="button" class="btn btn-default">LeftB</button>
+            <button type="button" class="btn btn-default">MiddleB</button>
+            <button type="button" class="btn btn-default">RightB</button>
           </div>
-          <div class="navbar-header">
-            <a href="#">Manufacturers</a>
+          <!-- Button groups End -->
+          <!-- Pills -->
+          <div>
+            <ul class="nav nav-pills nav-stacked">
+              <li role="presentation" class="active"><a href="#">Home</a></li>
+              <li role="presentation"><a href="#">Profile</a></li>
+              <li role="presentation"><a href="#">Messages</a></li>
+            </ul>
           </div>
+          <!-- Pills End-->
+          <!-- Modal Starts -->
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary btn-lg" id="modalButton" data-toggle="modal" data-target="#myModal">
+            Launch demo modal
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal Ends-->
         </div>
-      </nav>
-      <div class="item">
-        <h2 class="item-heading">Tandy’s Basketweavers</h2>
-        <div>490 Freedom Drive<br>
-        Philadelphia, PA 19425</div>
-      </div>
-      <div class="item">
-        <h2 class="item-heading">Basket Case</h2>
-        <div>400 S 46th Street<br>
-        Philadelphia, PA 19144</div>
-      </div>
-      <div class="item">
-        <h2 class="item-heading">Bas-kids: Baskets 4 Kids</h2>
-        <div>2558 Walnut Street<br>
-        Philadelphia, PA 19107</div>
-      </div>
-      <div class="item">
-        <h2 class="item-heading">Bask in the Glory</h2>
-        <div>2501 Walnut Street<br>
-        Philadelphia, PA 19107</div>
-      </div>
-      <div class="item">
-        <h2 class="item-heading">Basket Ball</h2>
-        <div>2542 Walnut Street<br>
-        Philadelphia, PA 19107</div>
-      </div>
-      <div class="sort">
-        Sort by <span class="sort-option selected">A–Z</span> <span class="sort-option">Inventory</span>
+        <!-- sidebar1 Ends -->
+        <!-- sidebar2 -->
+        <div class="col-md-3" id="sidebar2">
+          <!-- <div class="sidebar"> -->
+          <nav class="navbar navbar-default">
+            <div class="navbar-header">
+              <a href="#">Manufacturers</a>
+            </div>
+            <div class="container-fluid clearfix">
+              <div class="topright-button" style="float: right">
+                <!-- <div class="dropdown">
+                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Dropdown<span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dLabel">
+                    <li><a href="#">Action</a></li>
+                    <li class="disabled"><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div> -->
+                <!-- Split button -->
+                <div class="btn-group">
+                  <button type="button" class="btn btn-danger">Action</button>
+                  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <!-- Split button Ends-->
+              </div>
+            </div>
+          </nav>
+          <!-- Nav Ends-->
+          <div class="item">
+            <h2 class="item-heading">Tandy’s Basketweavers</h2>
+            <div>490 Freedom Drive<br>
+            Philadelphia, PA 19425</div>
+          </div>
+          <div class="item">
+            <h2 class="item-heading">Basket Case</h2>
+            <div>400 S 46th Street<br>
+            Philadelphia, PA 19144</div>
+          </div>
+          <div class="item">
+            <h2 class="item-heading">Bas-kids: Baskets 4 Kids</h2>
+            <div>2558 Walnut Street<br>
+            Philadelphia, PA 19107</div>
+          </div>
+          <div class="item">
+            <h2 class="item-heading">Bask in the Glory</h2>
+            <div>2501 Walnut Street<br>
+            Philadelphia, PA 19107</div>
+          </div>
+          <div class="item">
+            <h2 class="item-heading">Basket Ball</h2>
+            <div>2542 Walnut Street<br>
+            Philadelphia, PA 19107</div>
+          </div>
+          <div class="sort">
+            Sort by <span class="sort-option selected">A–Z</span> <span class="sort-option">Inventory</span>
+          </div>
+          <!-- </div> -->
+        </div>
+        <!-- sidebar2 Ends-->
+        <!-- Map -->
+        <div class="map col-md-7" id="map" ></div>
+        <!-- Map Ends -->
       </div>
     </div>
-    <!-- Map -->
-    <div id="map" class="map"></div>
+
     <!-- Javascript Imports -->
     <script src="js/jquery-2.2.0.js"></script>
     <script src="js/leaflet.js"></script>
     <!-- Choose a frontend framework Javascript file: -->
-    <!-- <script src="js/bootstrap.js"></script> -->
+    <script src="js/bootstrap.js"></script>
     <!-- <script src="js/material.js"></script> -->
     <!-- <script src="js/assembly.js"></script>  -->
     <script src="js/setup.js"></script>
