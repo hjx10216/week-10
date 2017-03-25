@@ -18,26 +18,51 @@
       <div class="row">
         <!-- sidebar1 -->
         <div class="col-md-2" id="sidebar1">
-          <!-- Button groups -->
-          <div class="btn-group" role="group" aria-label="...">
-            <button type="button" class="btn btn-default">LeftB</button>
-            <button type="button" class="btn btn-default">MiddleB</button>
-            <button type="button" class="btn btn-default">RightB</button>
-          </div>
-          <!-- Button groups End -->
+          <!-- Breadcrumbs -->
+          <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Library</a></li>
+            <li class="active">Data</li>
+          </ol>
+
           <!-- Pills -->
           <div>
             <ul class="nav nav-pills nav-stacked">
+
               <li role="presentation" class="active"><a href="#">Home</a></li>
               <li role="presentation"><a href="#">Profile</a></li>
               <li role="presentation"><a href="#">Messages</a></li>
             </ul>
           </div>
           <!-- Pills End-->
+          <!-- Input Groups-->
+          <div class="input-group" id="input-group">
+            <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-addon" id="basic-addon2">@example.com</span>
+          </div>
+          <!-- Input Groups Ends-->
+          <!-- Button groups -->
+          <div class="list-group" id="buttonGroup">
+            <button type="button" class="list-group-item">Cras justo odio</button>
+            <button type="button" class="list-group-item">Dapibus ac facilisis in</button>
+            <button type="button" class="list-group-item">Morbi leo risus</button>
+            <button type="button" class="list-group-item">Porta ac consectetur ac</button>
+            <button type="button" class="list-group-item">Vestibulum at eros</button>
+          </div>
+          <!-- Button groups End -->
+          <!-- Labels -->
+          <h3 id="EH">
+            <!-- <span class="label label-default">1</span> -->
+            <span class="label label-primary">2</span>
+            <span class="label label-success">3</span>
+            <span class="label label-info">4</span>
+            <span class="label label-warning">5</span>
+            <span class="label label-danger">6</span>
+          </h3>
           <!-- Modal Starts -->
           <!-- Button trigger modal -->
           <button type="button" class="btn btn-primary btn-lg" id="modalButton" data-toggle="modal" data-target="#myModal">
-            Launch demo modal
+            Launch demo modal !
           </button>
           <!-- Modal -->
           <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -48,7 +73,41 @@
                   <h4 class="modal-title" id="myModalLabel">Modal title</h4>
                 </div>
                 <div class="modal-body">
-                  ...
+                  <!-- Jumbotron-->
+                  <div class="jumbotron" id="jumbotron">
+                    <h1>Hello, world!</h1>
+                    <div class="container">
+                      <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                    </div>
+                  </div>
+                  <!-- Jumbotron Ends-->
+                  <!-- Alert-->
+                  <div class="alert alert-success" role="alert">...</div>
+                  <div class="alert alert-info" role="alert">...</div>
+                  <div class="alert alert-warning" role="alert">...</div>
+                  <div class="alert alert-danger" role="alert">...</div>
+                  <!-- Alert Ends-->
+                  <!-- Tooltip-->
+                  <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+                  <!-- Tooltips Ends-->
+                  <br>
+                  <br>
+                  <!-- Process Bar-->
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                      60%
+                    </div>
+                  </div>
+                  <!-- Process Bar Ends-->
+                  <br>
+                  <!-- Badges -->
+                  <ul class="nav nav-pills" role="tablist" id="Badges">
+                    <li role="presentation" class="active"><a href="#">Home <span class="badge">42</span></a></li>
+                    <li role="presentation"><a href="#">Profile</a></li>
+                    <li role="presentation"><a href="#">Messages <span class="badge">3</span></a></li>
+                  </ul>
+                  <!-- Badges Ends-->
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -58,11 +117,37 @@
             </div>
           </div>
           <!-- Modal Ends-->
+          <!-- Page navigation-->
+          <nav aria-label="Page navigation" id="page">
+            <ul class="pagination">
+              <li>
+                <a href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li>
+                <a href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
+        <!-- Page navigation Ends-->
         <!-- sidebar1 Ends -->
         <!-- sidebar2 -->
         <div class="col-md-3" id="sidebar2">
-          <!-- <div class="sidebar"> -->
+          <!-- Nav -->
+          <ul class="nav nav-tabs nav-justified">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">Profile</a></li>
+            <li role="presentation"><a href="#">Messages</a></li>
+          </ul>
+
           <nav class="navbar navbar-default">
             <div class="navbar-header">
               <a href="#">Manufacturers</a>
@@ -101,7 +186,7 @@
             </div>
           </nav>
           <!-- Nav Ends-->
-          <div class="item">
+          <div class="item" id="item1">
             <h2 class="item-heading">Tandy’s Basketweavers</h2>
             <div>490 Freedom Drive<br>
             Philadelphia, PA 19425</div>

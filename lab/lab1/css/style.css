@@ -25,28 +25,54 @@ body {
 }
 
 #sidebar1{
-  background-color: #DDD;
-  height:900px;
+  background-color: #EEE;
+  height:800px;
 }
 
 .navbar-default{
   padding:5px;
+  top:20px;
 }
 
 .nav-pills{
   position:relative;
+  top:10px;
+}
+
+#input-group{
+  position:relative;
   top:20px;
+}
+
+#buttonGroup{
+  position:relative;
+  top:40px;
 }
 
 #modalButton{
   position:fixed;
-  bottom:20px;
+  top:590px;
+  left:auto;
 }
+
+#EH{
+  position:fixed;
+  top:520px;
+  left:20px;
 }
+
+#page{
+  position:absolute;
+  bottom:0px;
+}
+
 
 .item {
     padding: 10px;
     background-color: #EEE;
+    overflow-y: 200;
+    position: relative;
+    top:20px;
 }
 
 .item:not(:last-child) {
